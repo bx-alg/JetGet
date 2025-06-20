@@ -3,7 +3,6 @@ package com.downloader.core;
 import com.downloader.model.DownloadTask;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.io.File;
 import java.util.*;
 import java.util.concurrent.*;
@@ -34,7 +33,7 @@ public class DownloadManager
             return t;
         });
         this.listeners = new ArrayList<>();
-        this.maxConcurrentDownloads = new AtomicInteger(3); // 默认最多3个并发下载
+        this.maxConcurrentDownloads = new AtomicInteger(4); // 默认最多4个并发下载
         this.activeDownloads = new AtomicInteger(0);
 
         logger.info("下载管理器已初始化");
