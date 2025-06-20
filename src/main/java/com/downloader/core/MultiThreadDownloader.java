@@ -118,7 +118,7 @@ public class MultiThreadDownloader implements Runnable
             {
                 if (supportResume && fileInfo.size > 1024 * 1024)
                 { // 大于1MB才使用多线程
-                    // 多线程下载
+                  // 多线程下载
                     downloadMultiThread(fileInfo, tempFile, startPosition);
                 } else
                 {

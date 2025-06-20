@@ -48,7 +48,7 @@ public class DownloadTask
         this.downloadedSize = new AtomicLong(0);
         this.status = Status.WAITING;
         this.createTime = LocalDateTime.now();
-        this.threadCount = 4; // 默认4个线程
+        this.threadCount = 8; // 默认8个线程
     }
 
     private String generateId()

@@ -192,7 +192,6 @@ public class DownloadManager
             downloaders.remove(taskId);
             notifyTaskUpdated(task);
             logger.info("暂停下载: {}", task.getFileName());
-
             // 启动等待中的任务
             startNextWaitingTask();
         }
